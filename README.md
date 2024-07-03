@@ -7,6 +7,7 @@ The electrical components that used are:
 - Arduino UNO.
 - Voltage Regulator 5V.
 - 9V Battery.
+
 Circuit connection are shown below.
 
 ![image](https://github.com/AFrado/Robot-Walk-Using-Servo-Motors/assets/174622127/05ccf347-c01b-4ad4-a448-0d632eb8f782)
