@@ -12,7 +12,7 @@ The file contain an Arduino IDE code.
 
 ![image](https://github.com/AFrado/Robot-Walk-Using-Servo-Motors/assets/174622127/05ccf347-c01b-4ad4-a448-0d632eb8f782)
 
-ThinkerCad URL: https://www.tinkercad.com/things/07r1q2ht0LS-incredible-kup
+TinkerCad URL: https://www.tinkercad.com/things/07r1q2ht0LS-incredible-kup
 
 **Robot movement explaination:**
 
