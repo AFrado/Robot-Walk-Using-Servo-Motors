@@ -1,0 +1,64 @@
+#include <Servo.h>
+
+// Define servo objects
+Servo servo1; // Right hip
+Servo servo2; // Right knee
+Servo servo3; // Right ankle
+Servo servo4; // Left hip
+Servo servo5; // Left knee
+Servo servo6; // Left ankle
+
+// Define servo pins
+const int servoPin1 = 2;
+const int servoPin2 = 3;
+const int servoPin3 = 4;
+const int servoPin4 = 5;
+const int servoPin5 = 6;
+const int servoPin6 = 7;
+
+// Define walking sequence parameters
+const int stepDelay = 500; // Delay between steps in milliseconds
+
+void setup() {
+  // Attach the servo objects to the servo pins
+  servo1.attach(servoPin1);
+  servo2.attach(servoPin2);
+  servo3.attach(servoPin3);
+  servo4.attach(servoPin4);
+  servo5.attach(servoPin5);
+  servo6.attach(servoPin6);
+}
+
+void loop() {
+  // Step 1: Move right leg forward
+  servo1.write(45);  // Right hip forward
+  delay(stepDelay);
+  servo2.write(90);  // Right knee bent
+  delay(stepDelay);
+  servo3.write(45);  // Right ankle forward
+  delay(stepDelay);
+
+  // Step 2: Move left leg backward
+  servo4.write(135); // Left hip backward
+  delay(stepDelay);
+  servo5.write(0);   // Left knee straight
+  delay(stepDelay);
+  servo6.write(135); // Left ankle backward
+  delay(stepDelay);
+
+  // Step 3: Move right leg backward
+  servo1.write(135); // Right hip backward
+  delay(stepDelay);
+  servo2.write(0);   // Right knee straight
+  delay(stepDelay);
+  servo3.write(135); // Right ankle backward
+  delay(stepDelay);
+
+  // Step 4: Move left leg forward
+  servo4.write(45);  // Left hip forward
+  delay(stepDelay);
+  servo5.write(90);  // Left knee bent
+  delay(stepDelay);
+  servo6.write(45);  // Left ankle forward
+  delay(stepDelay);
+}
